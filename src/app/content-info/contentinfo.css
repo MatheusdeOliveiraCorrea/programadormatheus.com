@@ -3,9 +3,9 @@
 
 .title {
     font-weight: 700;
-    font-size: 170%;
+    font-size: 100%;
     margin-bottom: 3%;
-    font-family: "Jacquard 24", system-ui;
+    font-family: greek-font;
 }
 
 p{

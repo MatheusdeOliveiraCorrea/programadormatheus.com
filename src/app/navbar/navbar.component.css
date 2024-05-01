@@ -10,6 +10,6 @@ mat-toolbar {
 }
 
 .title{
-    font-family: "Jacquard 24", system-ui;
-    font-size: 150%;
+    font-family: greek-font;
+    font-size: 100%;
 }

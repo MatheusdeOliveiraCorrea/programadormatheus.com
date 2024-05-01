@@ -5,7 +5,3 @@ mat-card {
 mat-card:hover {
     transform: scale(1.05);
 }
-
-mat-chip {
-    background-color: black;
-}
