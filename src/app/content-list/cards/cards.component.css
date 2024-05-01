@@ -1,0 +1,11 @@
+mat-card {
+    transition-duration: 1s;
+}
+
+mat-card:hover {
+    transform: scale(1.05);
+}
+
+mat-chip {
+    background-color: black;
+}

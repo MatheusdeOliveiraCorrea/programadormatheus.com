@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+mat-toolbar {
+    gap: 2%;
+    border-radius: 15px;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.title{
+    font-family: "Jacquard 24", system-ui;
+    font-size: 150%;
+}

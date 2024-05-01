@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+.title {
+    font-weight: 700;
+    font-size: 170%;
+    margin-bottom: 3%;
+    font-family: "Jacquard 24", system-ui;
+}
+
+p{
+    font-family: "Lugrasimo", cursive;
+    font-style: normal;
+}
