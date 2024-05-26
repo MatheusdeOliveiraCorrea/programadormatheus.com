@@ -3,17 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.domain", "agora.domain\agora.domain.csproj", "{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.domain", "agora.domain\agora.article.domain.csproj", "{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.domain.tests", "agora.domain.tests\agora.domain.tests.csproj", "{19E6D0AD-C5B7-430C-899E-693263CCC736}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.domain.tests", "agora.domain.tests\agora.article.domain.tests.csproj", "{19E6D0AD-C5B7-430C-899E-693263CCC736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.api", "agora.article.api\agora.article.api.csproj", "{437D4B13-4198-4710-B527-72F927A3AAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.infra", "agora.article.infra\agora.article.infra.csproj", "{36CFF882-387C-4A78-B151-0A205130A1BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +25,16 @@ Global
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437D4B13-4198-4710-B527-72F927A3AAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437D4B13-4198-4710-B527-72F927A3AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437D4B13-4198-4710-B527-72F927A3AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437D4B13-4198-4710-B527-72F927A3AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CFF882-387C-4A78-B151-0A205130A1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CFF882-387C-4A78-B151-0A205130A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CFF882-387C-4A78-B151-0A205130A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CFF882-387C-4A78-B151-0A205130A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\agora.domain\agora.domain.csproj" />
+    <ProjectReference Include="../agora.domain/agora.article.domain.csproj" />
   </ItemGroup>
 
 </Project>
