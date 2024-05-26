@@ -9,6 +9,7 @@
 # Node
 /node_modules
 web_ui/node_modules/
+web_ui/.angular/
 npm-debug.log
 yarn-error.log
 

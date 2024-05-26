@@ -4,6 +4,7 @@ import { CardsComponent } from './cards/cards.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MatCardModule,
     MatChipsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
     CardsComponent
