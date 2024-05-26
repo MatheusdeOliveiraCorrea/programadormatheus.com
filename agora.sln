@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.domain", "agora.domain\agora.domain.csproj", "{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.domain.tests", "agora.domain.tests\agora.domain.tests.csproj", "{19E6D0AD-C5B7-430C-899E-693263CCC736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

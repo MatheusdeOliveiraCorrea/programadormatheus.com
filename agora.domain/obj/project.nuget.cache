@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "y5QKoIvtcryLJ0gSX7Ob7dl4OnTBVylzR0skR0soZtKZNV6pKOIqRRJ3ZJ+GATEAb0KxsUMdFF41ri2Lq/6Oxg==",
+  "success": true,
+  "projectFilePath": "/home/matheus/Documents/the-agora/agora.domain/agora.domain.csproj",
+  "expectedPackageFiles": [
+    "/home/matheus/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

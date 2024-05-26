@@ -1,0 +1,12 @@
+/home/matheus/Documents/the-agora/agora.domain/bin/Debug/net8.0/agora.domain.deps.json
+/home/matheus/Documents/the-agora/agora.domain/bin/Debug/net8.0/agora.domain.dll
+/home/matheus/Documents/the-agora/agora.domain/bin/Debug/net8.0/agora.domain.pdb
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.AssemblyInfoInputs.cache
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.AssemblyInfo.cs
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.csproj.CoreCompileInputs.cache
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.sourcelink.json
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.dll
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/refint/agora.domain.dll
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/agora.domain.pdb
+/home/matheus/Documents/the-agora/agora.domain/obj/Debug/net8.0/ref/agora.domain.dll
