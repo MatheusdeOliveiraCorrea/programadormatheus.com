@@ -1,4 +1,4 @@
-@agora.article.api_HostAddress = http://localhost:5056
+@agora.article.api_HostAddress = http://localhost:5280
 
 GET {{agora.article.api_HostAddress}}/weatherforecast/
 Accept: application/json

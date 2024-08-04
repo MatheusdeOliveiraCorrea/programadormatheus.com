@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.domain", "agora.domain\agora.article.domain.csproj", "{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "agora.article.domain", "agora.domain\agora.article.domain.csproj", "{1DCF65E1-2799-46F2-AC4C-62946EA6A26D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.domain.tests", "agora.domain.tests\agora.article.domain.tests.csproj", "{19E6D0AD-C5B7-430C-899E-693263CCC736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "agora.article.domain.tests", "agora.domain.tests\agora.article.domain.tests.csproj", "{19E6D0AD-C5B7-430C-899E-693263CCC736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.api", "agora.article.api\agora.article.api.csproj", "{437D4B13-4198-4710-B527-72F927A3AAFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "agora.article.infra", "agora.article.infra\agora.article.infra.csproj", "{36CFF882-387C-4A78-B151-0A205130A1BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.infra", "agora.article.infra\agora.article.infra.csproj", "{36CFF882-387C-4A78-B151-0A205130A1BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.api", "agora.article.api\agora.article.api.csproj", "{EE4A6C55-AD1E-49B5-811F-F99A8ABC2110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.user.api", "agora.user.api\agora.user.api.csproj", "{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,16 +27,23 @@ Global
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E6D0AD-C5B7-430C-899E-693263CCC736}.Release|Any CPU.Build.0 = Release|Any CPU
-		{437D4B13-4198-4710-B527-72F927A3AAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{437D4B13-4198-4710-B527-72F927A3AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{437D4B13-4198-4710-B527-72F927A3AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{437D4B13-4198-4710-B527-72F927A3AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36CFF882-387C-4A78-B151-0A205130A1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36CFF882-387C-4A78-B151-0A205130A1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36CFF882-387C-4A78-B151-0A205130A1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36CFF882-387C-4A78-B151-0A205130A1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4A6C55-AD1E-49B5-811F-F99A8ABC2110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4A6C55-AD1E-49B5-811F-F99A8ABC2110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4A6C55-AD1E-49B5-811F-F99A8ABC2110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4A6C55-AD1E-49B5-811F-F99A8ABC2110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {534CCF7D-62AE-4A88-95F8-6B1F2B9883D4}
 	EndGlobalSection
 EndGlobal
