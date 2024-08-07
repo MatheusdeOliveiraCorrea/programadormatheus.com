@@ -1,6 +1,6 @@
-﻿namespace agora.domain;
+namespace agora.domain;
 
 public interface IValidatedEntity
 {
-    void ThrowsIfInvalidData();
+    void ThrowsIfInvalidData(bool creatingEntity = false);
 }

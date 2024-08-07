@@ -1,4 +1,4 @@
-﻿using agora.domain;
+using agora.domain;
 
 namespace agora.article.domain;
 
@@ -6,7 +6,7 @@ public interface IArticleRepository
 {
     Article CreateArticle(Article article);
 
-    Article GetArticle(int id);
+    Article GetArticle(string id);
 
     List<Article> GetArticles();
 
