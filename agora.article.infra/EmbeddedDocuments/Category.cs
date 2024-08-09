@@ -1,9 +1,8 @@
 using MongoDB.Bson;
-using Realms;
 
 namespace agora.article.infra.EmbeddedDocuments
 {
-  public partial class Category : IRealmObject
+  public partial class CategoryModel
   {
     public ObjectId _id { get; set; }
 

@@ -2,7 +2,7 @@ using agora.article.api.Parameters;
 using agora.article.domain;
 using agora.article.domain.entities;
 using agora.article.infra;
-using agora.article.infra.Models;
+using agora.article.infra.Helpers;
 using agora.article.infra.MongoDbContexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,7 +22,7 @@ namespace agora.article.api
 
       var builder = WebApplication.CreateBuilder(args);
 
-      //builder.Services.AddAuthorization();
+      builder.Services.AddAuthorization();
 
       builder.Services.AddEndpointsApiExplorer();
       builder.Services.AddSwaggerGen();
@@ -40,13 +40,14 @@ namespace agora.article.api
         app.UseSwaggerUI();
       }
 
-      //app.UseHttpsRedirection();
+      app.UseHttpsRedirection();
 
-      //app.UseAuthorization();
+      app.UseAuthorization();
 
       app.MapGet("/article", (IArticleRepository repository) =>
       {
-        return repository.GetArticles();
+        return repository.GetArticles()
+                         .Select(x => x.ToModel());
       });
 
       app.MapPost("/article", (JsonCreateArticle jsonArticle, IArticleRepository repository) =>
@@ -68,11 +69,5 @@ namespace agora.article.api
 
       app.Run();
     }
-  }
-
-  public class SimpleClass
-  {
-    public string UserName { get; set; }
-    public int Password { get; set; }
   }
 }

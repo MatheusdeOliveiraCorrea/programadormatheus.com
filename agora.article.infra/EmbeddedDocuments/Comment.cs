@@ -1,9 +1,8 @@
 using MongoDB.Bson;
-using Realms;
 
 namespace agora.article.infra.EmbeddedDocuments
 {
-  public partial class Comment : IRealmObject
+  public partial class CommentModel
   {
     public ObjectId _id { get; set; }
     public string body { get; set; }

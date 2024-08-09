@@ -8,7 +8,7 @@ public interface IArticleRepository
 
     Article GetArticle(string id);
 
-    List<Article> GetArticles();
+    IEnumerable<Article> GetArticles();
 
     Article UpdateArticle();
 

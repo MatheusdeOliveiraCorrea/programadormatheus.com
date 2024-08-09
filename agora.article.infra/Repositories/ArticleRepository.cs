@@ -1,5 +1,5 @@
 using agora.article.domain;
-using agora.article.infra.EmbeddedDocuments;
+using agora.article.infra.Helpers;
 using agora.article.infra.MongoDbContexts;
 using agora.domain;
 
@@ -7,7 +7,6 @@ namespace agora.article.infra;
 
 public class ArticleRepository : IArticleRepository
 {
-
   ArticleDBContext _dbContext;
 
   public ArticleRepository(ArticleDBContext context)
@@ -17,16 +16,7 @@ public class ArticleRepository : IArticleRepository
 
   public Article CreateArticle(Article article)
   {
-    var articleModel = new Models.ArticleModel
-    {
-      title = article.Title,
-      body = article.Body,
-    };
-
-    //article.Comments.Select(x => new Comment { body = x.Body }).ToList().ForEach(articleModel.comments.Add);
-    //article.Categories.Select(x => new Category { name = x.Name }).ToList().ForEach(articleModel.categories.Add);
-
-    _dbContext.Articles.Add(articleModel);
+    _dbContext.Articles.Add(article.ToModel());
 
     _dbContext.SaveChanges();
 
@@ -40,17 +30,14 @@ public class ArticleRepository : IArticleRepository
 
   public Article GetArticle(string id)
   {
-    return new Article(id, "Some title", "Body");
+    throw new NotImplementedException();
   }
 
-  public List<Article> GetArticles()
+  public IEnumerable<Article> GetArticles()
   {
-    return _dbContext.Articles
-                     .Select(x =>
-                      new Article(x._id.ToString()
-                                , x.title
-                                , x.body))
-                     .ToList();
+    var articles = _dbContext.Articles.ToArray();
+
+    return articles.Select(article => article.ToEntity());
   }
 
   public Article UpdateArticle()
