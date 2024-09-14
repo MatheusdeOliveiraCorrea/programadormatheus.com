@@ -6,9 +6,8 @@
                 <!-- TODO: baixar a imagem localmente -->
                 <img class="img-fluid rounded-circle mb-3" width="150" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dicionariopopular.com%2Fimagens%2Fimagem-de-perfil-gato.jpg&f=1&nofb=1&ipt=4e8b60865b07c5b16539ff7dfd8ea350fa80db277599c50696e5857829fc8ce1&ipo=images" alt="">
 
-                <h2>About Me</h2>
-                <p>Hi, I'm Matheus—a software developer passionate about technology, programming, and economics, particularly the Austrian School of Economics. Based in Brazil, I specialize in building efficient and reliable software solutions using technologies like .NET, C#, Angular, and AWS.</p>
-                <p>Beyond coding, I enjoy discussing culture, economics, and the future of technology. I'm also an avid language learner, always eager to explore new languages and cultures.</p>
+                <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
+                <p *ngFor="let paragraph of ( 'ABOUT.CONTENT' | translate )">{{ paragraph }}</p>
             </div>
         </div>
     </section>
@@ -16,8 +15,8 @@
     <section class="mb-5">
         <div class="card">
             <div class="card-body">
-                <h2>Background</h2>
-                <p>My journey in software development is driven by a constant desire to learn and innovate. I've worked on various projects that challenged me to grow both technically and professionally. My interest in economics provides a unique perspective that enriches my approach to problem-solving and system architecture.</p>
+                <h2>{{ 'BACKGROUND.TITLE' | translate }}</h2>
+                <p *ngFor="let paragraph of ('BACKGROUND.CONTENT' | translate)">{{ paragraph }}</p>
             </div>
         </div>
     </section>
@@ -25,28 +24,20 @@
     <section class="mb-5">
         <div class="card">
             <div class="card-body">
-                <h2>Interests</h2>
+                <h2>{{ 'INTERESTS.TITLE' | translate }}</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Technologies I Enjoy</h3>
+                        <h3>{{ 'INTERESTS.TECHNOLOGIES.TITLE' | translate }}</h3>
                         <ul>
-                            <li>.NET | C#</li>
-                            <li>Angular</li>
-                            <li>AWS</li>
-                            <li>Java</li>
-                            <li>Unix Systems (EndeavourOS, Pop!_OS)</li>
+                            <li *ngFor="let tech of ('INTERESTS.TECHNOLOGIES.LIST' | translate)">{{ tech }}</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h3>Personal Interests</h3>
+                        <h3>{{ 'INTERESTS.PERSONAL.TITLE' | translate }}</h3>
                         <ul>
-                            <li>Economics Enthusiast (Austrian School of Economics)</li>
-                            <li>Language Learning</li>
-                            <li>Music</li>
+                            <li *ngFor="let interest of ('INTERESTS.PERSONAL.LIST' | translate)">{{ interest }}</li>
                             <ul>
-                                <li>Classical: Tartini, Beethoven, Paganini</li>
-                                <li>Metal: Rammstein, Slipknot</li>
-                                <li>Others: Aurora Aksnes, The Beatles, Radiohead</li>
+                                <li *ngFor="let artist of ('INTERESTS.PERSONAL.MUSIC' | translate)">{{ artist }}</li>
                             </ul>
                         </ul>
                     </div>
@@ -58,9 +49,9 @@
     <section class="mb-5">
         <div class="card">
             <div class="card-body">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out if you'd like to discuss programming, economics, or share insights on technology and language learning.</p>
-                <a href="/contact" style="color: blue; text-decoration: underline;">Click here!</a>
+                <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
+                <p>{{ 'CONTACT.CONTENT' | translate }}</p>
+                <a href="/contact" style="color: blue; text-decoration: underline;">{{ 'CONTACT.BUTTON' | translate}}</a>
             </div>
         </div>
     </section>

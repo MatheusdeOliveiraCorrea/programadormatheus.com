@@ -7,13 +7,26 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="home">Home</a>
+                <a class="nav-link" href="home">{{ 'NAVBAR.HOME' | translate }}</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about">Sobre Mim</a>
+                <a class="nav-link" href="about">{{ 'NAVBAR.ABOUT' | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact">Contato</a>
+                <a class="nav-link" href="contact">{{ 'NAVBAR.CONTACT' | translate }}</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ 'NAVBAR.LANGUAGE_SELECTOR' | translate }}
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item"  (click)="switchLanguage('pt')">Português</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" (click)="switchLanguage('en')" >English</a>
+                </li>
+              </ul>
             </li>
         </ul>
       </div>

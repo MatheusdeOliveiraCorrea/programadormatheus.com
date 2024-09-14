@@ -1,0 +1,55 @@
+{
+  "NAVBAR": {
+    "HOME": "Home",
+    "ABOUT": "Sobre Mim",
+    "CONTACT": "Contacto",
+    "LANGUAGE_SELECTOR": "Selecionar Idioma"
+  },
+  "ABOUT": {
+    "TITLE": "Sobre Mim",
+    "CONTENT": [
+      "Olá, eu sou o Matheus—um desenvolvedor de software apaixonado por tecnologia, programação e economia, particularmente a Escola Austríaca de Economia.",
+      "Com base no Brasil, eu me especializo em construir soluções de software eficientes e confiáveis usando tecnologias como .NET, C#, Angular e AWS.",
+      "Além de programar, gosto de discutir cultura, economia e o futuro da tecnologia. Também sou um ávido aprendiz de idiomas, sempre ansioso para explorar novas línguas e culturas."
+    ]
+  },
+  "BACKGROUND": {
+    "TITLE": "Background",
+    "CONTENT": [
+      "Minha jornada no desenvolvimento de software é impulsionada por um desejo constante de aprender e inovar.",
+      "Trabalhei em vários projetos que me desafiaram a crescer tanto tecnicamente quanto profissionalmente.",
+      "Meu interesse em economia fornece uma perspectiva única que enriquece minha abordagem para resolução de problemas e arquitetura de sistemas."
+    ]
+  },
+  "INTERESTS": {
+    "TITLE": "Interesses",
+    "TECHNOLOGIES": {
+      "TITLE": "Tecnologias que Gosto",
+      "LIST": [
+        ".NET | C#",
+        "Angular",
+        "AWS",
+        "Java",
+        "Sistemas Unix (EndeavourOS, Pop!_OS)"
+      ]
+    },
+    "PERSONAL": {
+      "TITLE": "Interesses Pessoais",
+      "LIST": [
+        "Entusiasta de Economia (Escola Austríaca de Economia)",
+        "Aprendizado de Idiomas",
+        "Música"
+      ],
+      "MUSIC": [
+        "Clássica: Tartini, Beethoven, Paganini",
+        "Metal: Rammstein, Slipknot",
+        "Outros: Aurora Aksnes, The Beatles, Radiohead..."
+      ]
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Entre em Contato",
+    "CONTENT": "Sinta-se à vontade para entrar em contato se você quiser discutir programação, economia ou compartilhar insights sobre tecnologia e aprendizado de idiomas.",
+    "BUTTON": "Clique aqui!"
+  }
+}

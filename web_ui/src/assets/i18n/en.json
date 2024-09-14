@@ -1,0 +1,55 @@
+{
+    "NAVBAR": {
+        "HOME": "Home",
+        "ABOUT": "About",
+        "CONTACT": "Contact",
+        "LANGUAGE_SELECTOR": "Select language"
+      },
+    "ABOUT": {
+        "TITLE": "About Me",
+        "CONTENT": [
+            "Hi, I'm Matheus—a software developer passionate about technology, programming, and economics, particularly the Austrian School of Economics.",
+            "Based in Brazil, I specialize in building efficient and reliable software solutions using technologies like .NET, C#, Angular, and AWS.",
+            "Beyond coding, I enjoy discussing culture, economics, and the future of technology. I'm also an avid language learner, always eager to explore new languages and cultures."
+        ]
+    },
+    "BACKGROUND": {
+        "TITLE": "Background",
+        "CONTENT": [
+            "My journey in software development is driven by a constant desire to learn and innovate.",
+            "I've worked on various projects that challenged me to grow both technically and professionally.",
+            "My interest in economics provides a unique perspective that enriches my approach to problem-solving and system architecture."
+        ]
+    },
+    "INTERESTS": {
+        "TITLE": "Interests",
+        "TECHNOLOGIES": {
+            "TITLE": "Technologies I Enjoy",
+            "LIST": [
+                ".NET | C#",
+                "Angular",
+                "AWS",
+                "Java",
+                "Unix Systems (EndeavourOS, Pop!_OS)"
+            ]
+        },
+        "PERSONAL": {
+            "TITLE": "Personal Interests",
+            "LIST": [
+                "Economics Enthusiast (Austrian School of Economics)",
+                "Language Learning",
+                "Music"
+            ],
+            "MUSIC": [
+                "Classical: Tartini, Beethoven, Paganini",
+                "Metal: Rammstein, Slipknot",
+                "Others: Aurora Aksnes, The Beatles, Radiohead..."
+            ]
+        }
+    },
+    "CONTACT": {
+        "TITLE": "Contact Me",
+        "CONTENT": "Feel free to reach out if you'd like to discuss programming, economics, or share insights on technology and language learning.",
+        "BUTTON": "Click here!"
+    }
+}

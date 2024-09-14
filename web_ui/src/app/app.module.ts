@@ -13,6 +13,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { ContactsComponent } from './contact/components/contacts/contacts.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -29,7 +36,15 @@ import { FooterComponent } from './shared/footer/footer.component';
     MatCardModule,
     MatChipsModule,
     MatGridListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     provideAnimationsAsync()
