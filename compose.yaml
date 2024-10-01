@@ -1,0 +1,11 @@
+services:
+  agora_article_api:
+    image: agora.article.api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGODB_URI_ARTICLE_DB=${MONGODB_URI_ARTICLE_DB}
+    restart: unless-stopped

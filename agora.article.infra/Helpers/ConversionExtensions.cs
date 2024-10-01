@@ -7,15 +7,17 @@ namespace agora.article.infra.Helpers
 {
   public static class ConversionExtensions
   {
+    private static MongoDB.Bson.ObjectId GetIdOrNewIdWhenNull(string id) => id is null ?
+        MongoDB.Bson.ObjectId.GenerateNewId() :
+        MongoDB.Bson.ObjectId.Parse(id);
+
     public static ArticleModel ToModel(this Article article)
     {
       return new ArticleModel
       {
-        _id = article.Id is null ?
-              MongoDB.Bson.ObjectId.GenerateNewId() : 
-              MongoDB.Bson.ObjectId.Parse(article.Id),
+        _id = GetIdOrNewIdWhenNull(article.Id),
         title = article.Title,
-        author_id = article.AuthorID,
+        author_id = GetIdOrNewIdWhenNull(article.AuthorID).ToString(),
         body = article.Body,
         categories = article.Categories
                             .Select(category => category.ToModel())
@@ -31,6 +33,7 @@ namespace agora.article.infra.Helpers
     {
       return new CommentModel
       {
+        _id = GetIdOrNewIdWhenNull(comment.Id),
         body = comment.Body,
       };
     }
@@ -39,6 +42,7 @@ namespace agora.article.infra.Helpers
     {
       return new CategoryModel
       {
+        _id = GetIdOrNewIdWhenNull(category.Id),
         name = category.Name,
       };
     }

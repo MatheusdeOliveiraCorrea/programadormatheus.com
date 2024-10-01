@@ -23,6 +23,7 @@ namespace agora.article.api
       var builder = WebApplication.CreateBuilder(args);
 
       builder.Services.AddAuthorization();
+      builder.Services.AddCors();
 
       builder.Services.AddEndpointsApiExplorer();
       builder.Services.AddSwaggerGen();
@@ -42,7 +43,13 @@ namespace agora.article.api
 
       app.UseHttpsRedirection();
 
-      app.UseAuthorization();
+      //app.UseAuthorization();
+
+      app.UseCors(x => x
+         .AllowAnyMethod()
+         .AllowAnyHeader()
+         .SetIsOriginAllowed(origin => true)
+         .AllowCredentials());
 
       app.MapGet("/article", (IArticleRepository repository) =>
       {
@@ -67,7 +74,7 @@ namespace agora.article.api
         repository.CreateArticle(entityArticle);
       });
 
-      app.Run();
+      app.Run("http://0.0.0.0:80");
     }
   }
 }

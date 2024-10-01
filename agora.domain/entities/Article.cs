@@ -10,7 +10,7 @@ public class Article : IValidatedEntity
 
   public string Body { get; private set; }
 
-  public int AuthorID { get; private set; }
+  public string AuthorID { get; private set; }
 
   public IEnumerable<Category> Categories { get; private set; } = [];
 
