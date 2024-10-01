@@ -1,22 +1,7 @@
-<a href="#">
+<a *ngFor="let article of articles" href="#">
   <mat-card class="example-card mt-3" appearance="outlined">
     <mat-card-header>
-      <mat-card-title class="text-primary">Por que .NET é foda?</mat-card-title>
-    </mat-card-header>
-    <mat-card-content class="text-secondary">
-      <div class="d-flex justify-content-between">
-        <p>Sla o que blab lbablabla</p>
-        <a href="/about" class="onHoverAuthorName">
-          <p>By Matheus</p>
-        </a>
-      </div>
-    </mat-card-content>
-  </mat-card>
-</a>
-<a href="#">
-  <mat-card class="example-card mt-3" appearance="outlined">
-    <mat-card-header>
-      <mat-card-title class="text-primary">Por que .NET é foda?</mat-card-title>
+      <mat-card-title class="text-primary">{{ article.title }}</mat-card-title>
     </mat-card-header>
     <mat-card-content class="text-secondary">
       <div class="d-flex justify-content-between">
