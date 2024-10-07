@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.api", "agora.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.user.api", "agora.user.api\agora.user.api.csproj", "{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agora.article.api.lambda", "agora.article.api.lambda\src\agora.article.api.lambda\agora.article.api.lambda.csproj", "{6430DC57-0E53-46DD-96BB-3D90062B2D4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E34C8DAC-1730-4AFE-95A8-D3383D0B9426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6430DC57-0E53-46DD-96BB-3D90062B2D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6430DC57-0E53-46DD-96BB-3D90062B2D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6430DC57-0E53-46DD-96BB-3D90062B2D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6430DC57-0E53-46DD-96BB-3D90062B2D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
