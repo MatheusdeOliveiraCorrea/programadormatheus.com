@@ -1,15 +1,27 @@
 mat-card {
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
+    background-color: var(--primary-color);
+    border-bottom: 0.1rem solid var(--border-color);
 }
 
 mat-card:hover {
     transform: scale(1.001);
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
     border-width: 4px;
-    border-color: rgb(0, 204, 255);
+    border-color: var(--border-color);
+}
+
+mat-card:hover mat-card-title{ color: var(--hover-text-color); }
+
+mat-card-title {
+    color: var(--text-color);
+}
+/*TODO: check class name*/
+.onHoverAuthorName {
+    color: var(--text-color);
 }
 
 .onHoverAuthorName:hover {
-    color: blue;
+    color: var(--hover-text-color);
     text-decoration: underline;
 }

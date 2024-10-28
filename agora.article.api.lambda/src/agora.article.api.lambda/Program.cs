@@ -33,6 +33,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
+app.UseCors(cors => cors
+  .AllowAnyHeader()
+  .AllowAnyMethod()
+  .AllowAnyOrigin());
+
 app.MapGet("/", () => "Article API");
 
 app.MapGet("/article", (IArticleRepository repository) =>

@@ -7,3 +7,12 @@ a {
     text-decoration: none;
     color: black;
 }
+
+:root {
+    --primary-color: #001524; /*1*/
+    --secondary-color: #01385f;
+    --text-color: #FDE5D4; /*4*/
+    --border-color: #3572EF;
+    --dark-green: #445D48; /*2*/
+    --hover-text-color: #D6CC99; /*3*/
+}

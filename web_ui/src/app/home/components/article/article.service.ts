@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ArticleService {
 
-  private apiUrl = 'http://34.205.53.74/article';
+  private apiUrl = 'https://zyii3bhr5l.execute-api.us-east-1.amazonaws.com/Prod/article';
 
   constructor(private http: HttpClient) { }
 

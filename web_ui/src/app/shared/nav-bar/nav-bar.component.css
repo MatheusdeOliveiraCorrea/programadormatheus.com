@@ -1,3 +1,29 @@
+nav {
+    background-color: var(--primary-color);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-item {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
 .nav-link:hover {
-    color: blue;
+    color: #B6C7AA;
+}
+
+.navbar-brand {
+    color: var(--text-color);
+    font-size: 180%;
+    padding-left: 5%;
+    padding-right: 2%;
+    font-weight: 600;
 }
